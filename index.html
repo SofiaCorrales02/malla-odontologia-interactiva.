@@ -1,20 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Interactiva de Odontología</title>
+  <title>Malla Odontología Interactiva</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <h1>Malla Odontología</h1>
-  <div class="malla">
-    <!-- Cada ramo es un div con data-prerrequisitos separados por comas -->
+  <h1>Malla Curricular Odontología</h1>
+
+  <!-- PRIMER AÑO -->
+  <h2>Primer Año</h2>
+  <div class="semestre">
+    <h3>Semestre I</h3>
+    <div class="ramo" data-prerrequisitos="">Bases Morfológicas y Estructurales I</div>
     <div class="ramo" data-prerrequisitos="">Biología Celular</div>
-    <div class="ramo" data-prerrequisitos="Biología Celular,Química General e Inorgánica">Bioquímica General</div>
-    <div class="ramo" data-prerrequisitos="Bioquímica General">Bioquímica Oral</div>
-    <div class="ramo" data-prerrequisitos="Bioquímica Oral,Patología General II,Promoción y Educación en Salud">Cariología Clínica</div>
-    <!-- Agrega todos los ramos que quieras -->
+    <div class="ramo" data-prerrequisitos="">Física Aplicada a la Odontología</div>
+    <div class="ramo" data-prerrequisitos="">Introducción a la Odontología I</div>
+    <div class="ramo" data-prerrequisitos="">Habilidades Comunicativas</div>
+    <div class="ramo" data-prerrequisitos="">Inglés I</div>
   </div>
+  <div class="semestre">
+    <h3>Semestre II</h3>
+    <div class="ramo" data-prerrequisitos="Bases Morfológicas y Estructurales I">Bases Morfológicas y Estructurales II</div>
+    <div class="ramo" data-prerrequisitos="Biología Celular">Genética Molecular Humana</div>
+    <div class="ramo" data-prerrequisitos="Física Aplicada a la Odontología">Química General e Inorgánica</div>
+    <div class="ramo" data-prerrequisitos="Introducción a la Odontología I">Introducción a la Odontología II</div>
+    <div class="ramo" data-prerrequisitos="Inglés I">Inglés II</div>
+  </div>
+
+  <!-- SEGUNDO AÑO -->
+  <h2>Segundo Año</h2>
+  <div class="semestre">
+    <h3>Anual</h3>
+    <div class="ramo" data-prerrequisitos="Bases Morfológicas y Estructurales II, Química General e Inorgánica, Introducción a la Odontología II">Biomateriales Dentales</div>
+  </div>
+  <div class="semestre">
+    <h3>Semestre III</h3>
+    <div class="ramo" data-prerrequisitos="Bases Morfológicas y Estructurales II">Fisiología</div>
+    <div class="ramo" data-prerrequisitos="Biología Celular, Química General e Inorgánica">Bioquímica General</div>
+    <div class="ramo" data-prerrequisitos="Genética Molecular Humana">Microbiología Oral</div>
+    <div class="ramo" data-prerrequisitos="Bases Morfológicas y Estructurales II, Genética Molecular Humana">Patología General I</div>
+    <div class="ramo" data-prerrequisitos="Inglés II">Inglés III</div>
+  </div>
+  <div class="semestre">
+    <h3>Semestre IV</h3>
+    <div class="ramo" data-prerrequisitos="Bioquímica General">Bioquímica Oral</div>
+    <div class="ramo" data-prerrequisitos="Fisiología, Patología General I">Patología General II</div>
+    <div class="ramo" data-prerrequisitos="Introducción a la Odontología II">Promoción y Educación en Salud</div>
+    <div class="ramo" data-prerrequisitos="Fisiología, Microbiología Oral">Farmacología</div>
+    <div class="ramo" data-prerrequisitos="Inglés III">Inglés IV</div>
+  </div>
+
+  
+  <!-- TERCER AÑO -->
+  <h2>Tercer Año</h2>
+  <div class="semestre">
+    <h3>Anual</h3>
+    <div class="ramo" data-prerrequisitos="Patología General II, Farmacología">Patología Dentomaxilofacial</div>
+    <div class="ramo" data-prerrequisitos="Patología General II">Imagenología Dentomaxilar</div>
+    <div class="ramo" data-prerrequisitos="Patología General II, Farmacología">Cirugía Bucal Básica</div>
+    <div class="ramo" data-prerrequisitos="Biomateriales Dentales">Fisiología Oral y Oclusión</div>
+    <div class="ramo" data-prerrequisitos="Biomateriales Dentales, Promoción y Educación en Salud">Integrador I: Preclínico Integrado</div>
+  </div>
+  <div class="semestre">
+    <h3>Segundo Semestre</h3>
+    <div class="ramo" data-prerrequisitos="Bioquímica Oral, Patología General II, Promoción y Educación en Salud">Cariología Clínica</div>
+  </div>
+
+  <!-- CUARTO AÑO -->
+  <h2>Cuarto Año</h2>
+  <div class="semestre">
+    <h3>Primer Semestre</h3>
+    <div class="ramo" data-prerrequisitos="Promoción y Educación en Salud">Ética y Psicología orientada a la Práctica Clínica</div>
+  </div>
+  <div class="semestre">
+    <h3>Segundo Semestre</h3>
+    <div class="ramo" data-prerrequisitos="Cariología Clínica">Salud Pública Odontológica</div>
+    <div class="ramo" data-prerrequisitos="Patología Dentomaxilofacial">Medicina Oral</div>
+  </div>
+  <div class="semestre">
+    <h3>Anual</h3>
+    <div class="ramo" data-prerrequisitos="Imagenología Dentomaxilar, Cirugía Bucal Básica, Fisiología Oral y Oclusión, Cariología Clínica, Integrador I: Preclínico Integrado">Rehabilitación Oral</div>
+    <div class="ramo" data-prerrequisitos="Patología Dentomaxilofacial, Imagenología Dentomaxilar, Cirugía Bucal Básica">Cirugía Dentomaxilar</div>
+    <div class="ramo" data-prerrequisitos="Imagenología Dentomaxilar, Cirugía Bucal Básica">Endodoncia</div>
+    <div class="ramo" data-prerrequisitos="Imagenología Dentomaxilar, Cirugía Bucal Básica, Integrador I: Preclínico Integrado">Periodoncia</div>
+  </div>
+
+  <!-- QUINTO AÑO -->
+  <h2>Quinto Año</h2>
+  <div class="semestre">
+    <h3>Primer Semestre</h3>
+    <div class="ramo" data-prerrequisitos="Habilidades Comunicativas">Pensamiento Crítico</div>
+  </div>
+  <div class="semestre">
+    <h3>Segundo Semestre</h3>
+    <div class="ramo" data-prerrequisitos="Salud Pública Odontológica">Odontología basada en la evidencia</div>
+    <div class="ramo" data-prerrequisitos="Salud Pública Odontológica">Administración y gestión en Odontología</div>
+  </div>
+  <div class="semestre">
+    <h3>Anual</h3>
+    <div class="ramo" data-prerrequisitos="Cirugía Dentomaxilar, Medicina Oral">Cirugía y Traumatología Maxilofacial</div>
+    <div class="ramo" data-prerrequisitos="Periodoncia">Ortodoncia y Ortopedia Dentomaxilar</div>
+    <div class="ramo" data-prerrequisitos="Ética y Psicología orientada a la Práctica Clínica, Rehabilitación Oral, Cirugía Dentomaxilar, Endodoncia, Periodoncia">Odontopediatría</div>
+    <div class="ramo" data-prerrequisitos="Ética y Psicología orientada a la Práctica Clínica, Rehabilitación Oral, Endodoncia, Periodoncia">INTEGRADOR II: Clínica Integral del Adulto y Odontogeriatría</div>
+  </div>
+
+  <!-- SEXTO AÑO -->
+  <h2>Sexto Año</h2>
+  <div class="semestre">
+    <h3>Anual</h3>
+    <div class="ramo" data-prerrequisitos="Pensamiento Crítico, Cirugía y Traumatología Maxilofacial, Ortodoncia y Ortopedia Dentomaxilar, Odontopediatría, Odontología basada en la evidencia, Administración y gestión en Odontología, INTEGRADOR II: Clínica Integral del Adulto y Odontogeriatría">Proyecto de Investigación</div>
+    <div class="ramo" data-prerrequisitos="Pensamiento Crítico, Cirugía y Traumatología Maxilofacial, Ortodoncia y Ortopedia Dentomaxilar, Odontopediatría, Odontología basada en la evidencia, Administración y gestión en Odontología, INTEGRADOR II: Clínica Integral del Adulto y Odontogeriatría">INTEGRADOR III: Internado Clínico</div>
+  </div>
+
 
   <script src="script.js"></script>
 </body>

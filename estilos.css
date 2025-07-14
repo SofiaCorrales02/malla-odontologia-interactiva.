@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f7f7f7;
+}
+h1 {
+  text-align: center;
+}
+.malla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.ramo {
+  background-color: #d9e8ff;
+  border: 2px solid #004080;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ramo.bloqueado {
+  background-color: #eee;
+  color: #999;
+  border-color: #ccc;
+  cursor: not-allowed;
+}

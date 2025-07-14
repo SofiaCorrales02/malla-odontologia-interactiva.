@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva de Odontología</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Malla Odontología</h1>
+  <div class="malla">
+    <!-- Cada ramo es un div con data-prerrequisitos separados por comas -->
+    <div class="ramo" data-prerrequisitos="">Biología Celular</div>
+    <div class="ramo" data-prerrequisitos="Biología Celular,Química General e Inorgánica">Bioquímica General</div>
+    <div class="ramo" data-prerrequisitos="Bioquímica General">Bioquímica Oral</div>
+    <div class="ramo" data-prerrequisitos="Bioquímica Oral,Patología General II,Promoción y Educación en Salud">Cariología Clínica</div>
+    <!-- Agrega todos los ramos que quieras -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

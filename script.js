@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Faltan prerrequisitos: " + requisitos.join(", "));
         ramo.classList.add("bloqueado");
       }
-    });
+// Lógica del botón de reinicio
+document.getElementById("reiniciar").addEventListener("click", () => {
+  document.querySelectorAll(".ramo").forEach(ramo => {
+    ramo.classList.remove("completado", "bloqueado");
   });
 });

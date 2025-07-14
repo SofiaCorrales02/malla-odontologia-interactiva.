@@ -1,80 +1,96 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
   padding: 20px;
-  background: #f7f7f7;
+  margin: 0;
+  color: #333;
 }
-h1, h2, h3 {
+
+h1, h2 {
   text-align: center;
+  color: #c2185b;
+}
+
+h3 {
+  margin-top: 0;
+  color: #ad1457;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 .semestre {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #f5f5f5;
-  border-left: 5px solid #004080;
-  padding: 10px 20px;
-  margin: 20px;
-  border-radius: 8px;
-  width: 300px;
+  background-color: #fce4ec;
+  border-left: 6px solid #ec407a;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-/* Colores por año */
-h2:nth-of-type(1) ~ .semestre { background-color: #e6f2ff; }
-h2:nth-of-type(2) ~ .semestre { background-color: #f0f9e6; }
-h2:nth-of-type(3) ~ .semestre { background-color: #fff7e6; }
-h2:nth-of-type(4) ~ .semestre { background-color: #fde9e9; }
-h2:nth-of-type(5) ~ .semestre { background-color: #f3e6ff; }
-h2:nth-of-type(6) ~ .semestre { background-color: #e6f7f7; }
 
 .ramo {
-  background-color: #d9e8ff;
-  border: 2px solid #004080;
-  padding: 10px 20px;
-  border-radius: 8px;
+  background-color: #f8bbd0;
+  border: 2px solid #c2185b;
+  color: #4a148c;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 5px 0;
   cursor: pointer;
   position: relative;
-}
-.ramo.bloqueado {
-  background-color: #eee;
-  color: #999;
-  border-color: #ccc;
-  cursor: not-allowed;
-}
-.ramo.completado {
-  background-color: #a5d6a7;
-  border-color: #2e7d32;
+  width: 100%;
 }
 
-/* Mostrar prerrequisitos al pasar el mouse */
 .ramo:hover::after {
   content: attr(data-prerrequisitos);
   position: absolute;
-  background-color: #333;
-  color: white;
-  padding: 5px 10px;
+  background-color: #880e4f;
+  color: #fff;
+  padding: 6px 10px;
   border-radius: 5px;
   top: 100%;
   left: 0;
   white-space: pre;
   z-index: 10;
+  font-size: 12px;
 }
 
-/* Botón de reinicio */
+.ramo.bloqueado {
+  background-color: #fce4ec;
+  border-color: #e0e0e0;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.ramo.completado {
+  background-color: #ce93d8;
+  border-color: #6a1b9a;
+  text-decoration: line-through;
+  opacity: 0.7;
+  color: #6a1b9a;
+}
+
 #reiniciar {
   display: block;
-  margin: 20px auto;
-  background-color: #ff6666;
+  margin: 30px auto 10px auto;
+  background-color: #ec407a;
   color: white;
   border: none;
   padding: 10px 20px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 15px;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
-.ramo.completado {
-  background-color: #a5d6a7;
-  border-color: #2e7d32;
-  text-decoration: line-through;
-  opacity: 0.7;
+
+#reiniciar:hover {
+  background-color: #d81b60;
 }
